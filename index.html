@@ -1,19 +1,247 @@
 <!doctype html>
 
 <html lang="nl">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+        <title>The HTML5 Herald</title>
+        <meta name="description" content="Jadran Ninkovic - webdeveloper en webdesigner van Dendermonde.">
+        <meta name="author" content="Jadran Ninkovic">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+        <!-- Google web fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
 
-</head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="css/style.css">
 
-<body>
-<script src="js/scripts.js"></script>
-</body>
+    </head>
+
+    <body>
+        <!-- loading stuff -->
+        <div id="loading">
+            <div class="loadingio-spinner-eclipse-o3srd1iiofs"><div class="ldio-516bsy9dkfw">
+                <div></div>
+            </div></div>
+            <span>Loading...</span>
+        </div>
+
+        <div id="mainContainer">
+
+            <!-- Fixed container vor the menu, goes at the top and bottom -->
+            <div id="fixedContainer">
+                <ul id="menu">
+                    <li id="logo"><i class="fas fa-cloud"></i><span>J</span></li>
+                    <li><i class="fas fa-line-chart"></i>Diensten</li>
+                    <li><i class="fas fa-code"></i>Projecten</li>
+                    <li><i class="fas fa-envelope"></i>Contact</li>
+                </ul>
+            </div>
+
+            <!-- landing page, to welcome the user -->
+            <div id="landingPage" class="parallax">
+                <div id="landingPageContent" >
+                    <div id="landingPageText">
+                        <div id="jitc">Jadran in the cloud</div>
+                        <span id="introMobileLandingPage1" class="mobileLandingPage">
+                                Webdesign / webdevelopment
+                        </span>
+
+                        <div class="introText">
+                            <span class="introMeta">Ik ben Jadran Ninkovic, een ervaringrijke professionele software ontwikkelaar en webdeveloper, gepassioneerd door alles op het online web.</span>
+                        </div>
+                    </div>
+                    <div id="landingPageArrow"></div>
+                </div>
+            </div>
+
+            <!-- seperate introduction for mobile users -->
+            <div id="mobileIntroduction">
+                <div class="introMeta">
+                    <div id="introName">Jadran Ninkovic</div>
+                    <br/>
+                    <span id="introAbout" data-aos="fade-up" >
+                        Dendermondse ervaringrijke professionele software ontwikkelaar en webdeveloper, gepassioneerd door alles op het online web.
+                    </span>
+                </div>
+            </div>
+
+            <!-- services, what do I have to offer -->
+            <div id="services">
+                <div id="servicesContent">
+                    <h2 id="servicesTitle1" class="servicesTitle">Webdesign en webdevelopment</h2>
+                    <h2 id="servicesTitle2" class="servicesTitle">voor zelfstandige en kmo's</h2>
+                    <p>Waarvoor kan je bij mij terecht?</p>
+                    <!--<p>Een web is zoveel meer dan alleen maar bits, bytes en websites. Het web is een ontmoetingsplaats voor mensen die elkaar willen vinden.</p>-->
+                    <div id="allServices">
+                        <div id="serviceWebdevelopment" class="service" data-aos="fade-up" >
+
+                            <i class="fas fa-code"></i>
+                            <h2>Webdevelopment</h2>
+                            <div></div>
+                            <div class="serviceText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aspernatur deserunt enim facilis quis, quod sed veniam voluptate voluptatem. Aliquid amet, aspernatur corporis eaque expedita itaque nulla omnis praesentium.</div>
+
+                            <div class="corners">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div id="serviceWebdesign" class="service" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-magic"></i>
+                            <h2>Webdesign</h2>
+                            <div></div>
+
+                            <!--Tijdloos design - eindeloos plezier-->
+                            <div class="serviceText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aspernatur deserunt enim facilis quis, quod sed veniam voluptate voluptatem. Aliquid amet, aspernatur corporis eaque expedita itaque nulla omnis praesentium.</div>
+
+                            <div class="corners">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div id="serviceMobileDevelopment" class="service" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fa fa-mobile"></i>
+
+                            <h2>Mobile development</h2>
+                            <div></div>
+                            <div class="serviceText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aspernatur deserunt enim facilis quis, quod sed veniam voluptate voluptatem. Aliquid amet, aspernatur corporis eaque expedita itaque nulla omnis praesentium.</div>
+
+                            <div class="corners">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div id="serviceDigitalPartner" class="service" data-aos="fade-up" >
+                            <i class="fa fa-handshake-o"></i>
+
+                            <h2>Uw digitale partner</h2>
+                            <div></div>
+                            <div class="serviceText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aspernatur deserunt enim facilis quis, quod sed veniam voluptate voluptatem. Aliquid amet, aspernatur corporis eaque expedita itaque nulla omnis praesentium.</div>
+
+                            <div class="corners">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div id="serviceUpgrade" class="service" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fa fa-plus"></i>
+
+                            <h2>Website remake/restyle</h2>
+                            <div></div>
+                            <div class="serviceText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aspernatur deserunt enim facilis quis, quod sed veniam voluptate voluptatem. Aliquid amet, aspernatur corporis eaque expedita itaque nulla omnis praesentium.</div>
+
+                            <div class="corners">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div id="serviceOfLove" class="service" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fa fa-heart"></i>
+
+                            <h2>Liefde</h2>
+                            <div></div>
+                            <div class="serviceText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi aspernatur deserunt enim facilis quis, quod sed veniam voluptate voluptatem. Aliquid amet, aspernatur corporis eaque expedita itaque nulla omnis praesentium.</div>
+
+                            <div class="corners">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- some of the projects I did -->
+            <div class="subTitle">
+                Projecten
+            </div>
+            <div id="projects">
+                <div id="work1" class="project"  >
+                    <div class="projectText">
+                        <div class="projectTextContent" data-aos="fade-up" data-aos-duration="250">
+                            <h2>Bibliotheek Dendermonde</h2>
+                            <p>Het vleeshuismuseum van de Bibliotheek Dendermonde wou een leuk project vooor kinderen opzetten, met een heuse kinderquiz</p>
+                            <ul>
+                                <li>Digital Branding</li>
+                                <li>UX (User Experience) Design</li>
+                                <li>Information Architecture</li>
+                                <li>Responsive Website Design</li>
+                                <li>Art Direction & Consulting</li>
+                            </ul>
+                            <div id="btnMoreInfoBib" class="btn">Meer informatie</div>
+                        </div>
+                    </div>
+                    <div class="projectImage ">
+                        <div id="bibImage"></div>
+                        <img src="img/browser.png" id="img1" alt="">
+                    </div>
+
+                </div>
+                <div id="work2" class="project" >
+                    <div class="projectImage ">
+                        <div id="uzbImage"></div>
+                        <img src="img/browser.png" id="img2" alt="" >
+                    </div>
+                    <div class="projectText">
+                        <div class="projectTextContent" data-aos="fade-up" data-aos-duration="250">
+                            <h2>Loginportaal UZ Brussel</h2>
+                            <p>Het loginportaal van het UZ Brussel was al jaren oud en had een dringende update nodig, om zowel de GUI als de User Experience te verbeteren</p>
+                            <ul>
+                                <li>Digital Branding</li>
+                                <li>UX (User Experience) Design</li>
+                                <li>Information Architecture</li>
+                                <li>Responsive Website Design</li>
+                                <li>Art Direction & Consulting</li>
+                            </ul>
+                            <div id="btnMoreInfoUzb" class="btn">Meer informatie</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="work3" class="project" >
+                    <div class="projectText" >
+                        <div class="projectTextContent" data-aos="fade-up" data-aos-duration="250">
+
+                            <h2>Objekt Architecten</h2>
+                            <p>Tijdelijke promowebsite voor de release van hun nieuwe nummer</p>
+                            <ul>
+                                <li>Digital Branding</li>
+                                <li>UX (User Experience) Design</li>
+                                <li>Information Architecture</li>
+                                <li>Responsive Website Design</li>
+                                <li>Art Direction & Consulting</li>
+                            </ul>
+                            <div id="btnMoreInfoOa" class="btn">Meer informatie</div>
+
+                        </div>
+                    </div>
+                    <div class="projectImage ">
+                        <div id="oaImage"></div>
+                        <img src="img/browser.png" id="img3" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
